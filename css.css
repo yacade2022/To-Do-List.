@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 530px;
+    text-align: center;
+    margin:40px auto;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px blue;
+    
+}
+.container{
+    width: 530px;
+    position: relative;
+    padding: 10px 0;
+    margin: 0 auto;
+    box-shadow: 0 0 10px blue;
+    
+}
+.groupe{
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.input{
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    
+}
+.label{
+    display: inline-block;
+    width: 200px;
+    text-transform: capitalize;
+}
+.submit{
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    color: white;
+    background-color: #10cab7;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .1s ;
+    
+    
+}
+.submit:hover{
+    transform: scale(1.1);
+}
+.list{
+    margin: 10px 20px;
+    width: 500px;
+}
+.table{
+    width: 100%;
+}
+
+thead tr{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+
+tbody tr{
+width: 100%;
+display: grid;
+grid-template-columns: 32% 32% 32% 4%;
+margin-bottom: 15px;    
+}
+
+.close{
+    text-decoration: none;
+    background-color: #10cab7;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+@media (max-width:600px){
+    header,.container{
+        width: 350px;
+    }
+    
+    .input{
+        width: 220px;
+        
+    }
+    .label{
+        width: 170px;
+    }
+    .list{
+        width: 320px;
+    }
+}
